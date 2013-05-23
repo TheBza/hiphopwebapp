@@ -1,0 +1,131 @@
+
+
+		
+		<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Main</title>
+            <meta name="description" content="hiphopwebsite">
+            <meta name="author" content="Roberto Andreucetti">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <!-- do not touch this one -->
+            <link href="lib/bootstrap_v230/css/bootstrap.min.css" rel="stylesheet"/>
+            <link href="lib/bootstrap_v230/css/bootstrap-responsive.min.css" rel="stylesheet"/>
+            
+            <!-- Your styles go in here-->
+            <link href="css/styles.css" rel="stylesheet"/>
+
+            <!-- javascripts libraries use by all pages-->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+            <!-- the link below to the CDN links to the latest version of jquery each time BUT
+            this is a bad idea 
+                1) the caching only works if you specify a version number
+                2) deploy with only what you have tested with
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+            -->
+            <script src="lib/bootstrap_v230/js/bootstrap.min.js"></script>
+
+            <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+            <!--[if lt IE 9]>
+                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+
+        </head>
+
+        <body>
+
+            <!-- stationary nav bar -->
+            <div class="navbar navbar-fixed-top navbar-inverse">
+              <div class="navbar-inner">
+                <div class="container">
+                  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </a>
+                  
+                  <div class="nav-collapse">
+                    <ul class="nav">
+                     	<li class="active"><a href="loginsuccess.html">Main</a></li>
+					<li><a href="lnews.html">Latest News</a></li>
+					<li><a href="lvideos.html">Latest Videos</a></li>
+					<li><a href="gigs.html">Gigs</a></li> 
+  
+                     
+                    </ul>
+					   <ul class="nav boxer_nav pull-right">
+            
+            <li><a href="logout.html"><i class="icon-inbox-box"></i> Logout</a></li>
+          </ul>
+                  </div><!--/.nav-collapse -->
+                </div>
+              </div>
+            </div>
+            
+            <!-- main page content -->
+            <div class="wrapper">
+            <!-- the wrapper is above the containers to push down the footer -->
+			<br/>
+       
+                       
+					   
+					 
+		
+
+                
+							<div  class="container login">
+                            
+								</br>
+							<h3 class="whitefont" align="center">Welcome<?php echo $_SESSION["userrecord"]["firstname"]; ?> !<br>
+							Please click on the following icons to navigate through the site
+							
+							<div class="row" >
+			
+			<div class="span 3">
+			<a href="lnews.html">
+				<img src="img\icon-news.png" alt="Latest News" width="150" height="150">
+				<p class="whitefont">Latest News</p>
+			</a>
+			</div>
+			
+			<div class="span 3" >
+				<a href="lvideos.html">
+				<img src="img\video-icon.png" alt="Latest Videos" width="150" height="150">
+				<p class="whitefont">Latest Videos</p>
+				</a>
+			</div>
+			
+			<div class="span">
+				<a href="gigs.html">
+				<img src="img\gigs.png" alt="Gigs" width="150" height="150">
+				<p class="whitefont">Gigs</p>
+				</a>
+			</div>
+			
+			
+					</div>	
+					</div> 
+					
+                  
+              
+					
+				
+          
+
+            <!-- keep this at the bottom to push down the footer-->
+            <div class="push"><!--//--></div>
+            </div><!-- .wrapper -->
+
+            <!-- footer -->
+            <footer>
+            <div class="container">
+            <div class="row">
+                    <p class="whitefont">&copy; Roberto Andreucetti 2013</p>
+            </div><!-- .row -->
+            </div><!-- .container -->
+            </footer>
+            
+        </body>
+    </html>
